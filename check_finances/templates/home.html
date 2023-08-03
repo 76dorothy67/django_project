@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}
+{% endblock %}
+
+
+{% block content %}
+<style>
+
+    p#1 {
+        font-size: 25px;
+        word-spacing: 10px;
+        text-indent: 3mm;
+        text-indent: 30px;
+
+    }
+</style>
+<div class="container">
+
+    <div class="lead" style="background-color:white; border-radius: 8px; padding: 40px; margin:50px;">
+        <center><h1>Ласкаво просимо!</h1></center><br>
+        <p> Ти хочеш більш свідомо ставитися до власних витрат або покращити свій фінансовий звіт?
+            Тоді цей застосунок саме для тебе! </p>
+        <p> Тут ти зможеш вносити, редагувати і видаляти витрати у таблиці. Також все те саме можна робити зі списком
+            категорій. Всі люди різні і потреби у людей також різні.
+            Зможеш з легкістю дістати фінансовий звіт за датами, а також побудувати чарти за днями та категоріями. </p>
+        <br>
+        <p> Do you want to be more conscious of your own costs or improve your financial report?
+            Then this application is for you! </p>
+        <p> Here you can add, edit and delete costs in the table. You can also do the same with a list of categories.
+            All
+            people are different, and people's needs are different as well.
+            You can easily get a financial report by date, as well as build charts by day and category.</p>
+    </div>
+    <p>{{section.connect}}</p>
+</div>
+{% endblock %}

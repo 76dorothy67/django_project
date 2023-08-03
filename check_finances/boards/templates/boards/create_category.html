@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<h1 align="center"> Create a category</h1>
+<br>
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <form method="POST" action="{% url 'create_category' %}">
+            {% csrf_token %}
+            <p>
+                <label class="form-label">Enter name of a category</label>
+                <input type='text' name='name_of_category' class="form-control"/>
+            </p>
+            {% if  error_name %}
+            <p style="color:red;"> {{ error_name }}</p>
+            {% endif %}
+            <br>
+            <input type="submit" class="btn btn-primary" value="Create"/>
+        </form>
+    </div>
+    <div class="col-3"></div>
+
+</div>
+<hr>
+<p>{{section.connect}}</p>
+{% endblock %}
